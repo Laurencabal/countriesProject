@@ -1,12 +1,19 @@
 package org.lauren.Controllers;
 
+import org.lauren.entities.CountriesEntities;
+import org.lauren.services.CountriesService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 @RestController
 @RequestMapping("/api/v1")
 public class countriesController {
+    @Autowired
+    CountriesService countriesService;
     @GetMapping("/countries")
-    public String getCountries(String[] args){
-        return "";
+    public List<CountriesEntities> getCountries(){
+        return countriesService.getCountries();
     }
 
     @GetMapping("/countries/{id}")
