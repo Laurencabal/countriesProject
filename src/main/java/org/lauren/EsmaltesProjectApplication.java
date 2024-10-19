@@ -2,11 +2,10 @@ package org.lauren;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
-public class CountriesProjectApplication {
+public class EsmaltesProjectApplication {
     public static void main (String [] args){
-        SpringApplication.run(CountriesProjectApplication.class, args);
+        SpringApplication.run(EsmaltesProjectApplication.class, args);
     }
 }
