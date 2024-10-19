@@ -16,7 +16,7 @@ public class CountriesService {
         Faker faker = new Faker();
         for(int i = 0; i < 10; i++){
             this.countries.add(new CountriesEntities(
-                    faker.idNumber().toString(),
+                    UUID.randomUUID().toString(),
                     faker.name().toString(),
                     faker.name().toString(),
                     faker.name().toString()
@@ -30,7 +30,11 @@ public class CountriesService {
     public Optional<CountriesEntities> getCountries(String id){
         return countries.stream()
                 .filter(item -> item.getId().equals(id))
-        .findFirst();
+                .findFirst();
+    }
+
+    public Boolean updateCountries(String id, CountriesEntities country){
+
     }
 
 }
