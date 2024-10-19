@@ -2,12 +2,14 @@ package org.lauren.services;
 
 import com.github.javafaker.Faker;
 import org.lauren.entities.EsmaltesEntities;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+@Service
 public class EsmaltesService {
     private List<EsmaltesEntities> esmaltes = new ArrayList<>();
     public EsmaltesService(){
@@ -15,9 +17,9 @@ public class EsmaltesService {
         for(int i = 0; i < 10; i++){
             this.esmaltes.add(new EsmaltesEntities(
                     UUID.randomUUID().toString(),
-                    faker.name().toString(),
-                    faker.code().toString(),
-                    faker.code().toString()
+                    faker.name().name(),
+                    faker.code().asin(),
+                    faker.code().ean13()
             ));
         }
     }
@@ -31,11 +33,12 @@ public class EsmaltesService {
                 .findFirst();
     }
 
-
-    public Boolean setEsmaltes(EsmaltesEntities esmalte){
-        return this.esmaltes.add(esmalte);
+    public EsmaltesEntities setEsmaltes(EsmaltesEntities esmalte){
+        esmalte.setId(UUID.randomUUID().toString());
+        this.esmaltes.add(esmalte);
+        return esmalte;
     }
-    public Boolean updateEsmaltes(String id, EsmaltesEntities esmalte){
+    public EsmaltesEntities updateEsmaltes(String id, EsmaltesEntities esmalte){
         this.deleteEsmaltes(id);
         esmalte.setId(id);
         return this.setEsmaltes(esmalte);

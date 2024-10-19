@@ -24,13 +24,13 @@ public class EsmaltesController {
     }
 
     @PostMapping("/esmaltes")
-    public Boolean createEsmaltes(@RequestBody EsmaltesEntities esmalte){
+    public EsmaltesEntities createEsmaltes(@RequestBody EsmaltesEntities esmalte){
         return esmaltesService.setEsmaltes(esmalte);
     }
 
 
     @PutMapping("/esmaltes/{id}")
-    public Boolean updateEsmaltes(@PathVariable String id, @RequestBody EsmaltesEntities esmalte){
+    public EsmaltesEntities updateEsmaltes(@PathVariable String id, @RequestBody EsmaltesEntities esmalte){
         return esmaltesService.updateEsmaltes(id, esmalte);
     }
 
