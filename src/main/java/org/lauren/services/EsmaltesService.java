@@ -19,7 +19,9 @@ public class EsmaltesService {
                     UUID.randomUUID().toString(),
                     faker.name().name(),
                     faker.code().asin(),
-                    faker.code().ean13()
+                    faker.code().ean13(),
+                    faker.number().randomDigit(),
+                    faker.commerce().price()
             ));
         }
     }

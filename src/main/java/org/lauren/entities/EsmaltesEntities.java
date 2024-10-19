@@ -11,4 +11,6 @@ public class EsmaltesEntities {
     private String name;
     private String code;
     private String reference;
+    private Integer Stock;
+    private String Price;
 }
