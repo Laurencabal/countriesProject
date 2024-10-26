@@ -1,0 +1,1618 @@
+{
+	"info": {
+		"_postman_id": "a16bde2a-116a-4dce-9072-90ccd07e55bd",
+		"name": "Makeup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NailsPolish",
+			"item": [
+				{
+					"name": "Get NailsPolish",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/nailPolish",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"nailPolish"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get NailsPolish",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/nailPolish",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"nailPolish"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 00:57:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"87a2074d-2099-4f23-90bf-f49946166656\",\n        \"name\": \"Mr. Cristian Bode\",\n        \"code\": \"B00066USKU\",\n        \"reference\": \"2192345497572\",\n        \"stock\": 2,\n        \"price\": \"32.75\"\n    },\n    {\n        \"id\": \"43ca27ee-5923-4d89-b534-090fc1154eaf\",\n        \"name\": \"Graciela Hartmann PhD\",\n        \"code\": \"B000J1FZV4\",\n        \"reference\": \"6182206509892\",\n        \"stock\": 7,\n        \"price\": \"12.43\"\n    },\n    {\n        \"id\": \"614ce748-6e31-4ce2-a97b-151031cd6f92\",\n        \"name\": \"Alicia Cummings\",\n        \"code\": \"B000A1AUBI\",\n        \"reference\": \"2406029834646\",\n        \"stock\": 3,\n        \"price\": \"4.40\"\n    },\n    {\n        \"id\": \"c8e87dbb-1829-4983-859d-251605e30078\",\n        \"name\": \"Gabriella Eichmann\",\n        \"code\": \"B000B5MVJM\",\n        \"reference\": \"2564128863964\",\n        \"stock\": 1,\n        \"price\": \"36.63\"\n    },\n    {\n        \"id\": \"822e9011-1a1c-4da3-8c75-f4a71992ed46\",\n        \"name\": \"Emie Weber\",\n        \"code\": \"B0000DE0T8\",\n        \"reference\": \"0632634737948\",\n        \"stock\": 7,\n        \"price\": \"60.38\"\n    },\n    {\n        \"id\": \"d7e7f289-febc-4d1b-852a-746acdcef0f2\",\n        \"name\": \"Will Runolfsdottir\",\n        \"code\": \"B0002W2RBG\",\n        \"reference\": \"0373600431438\",\n        \"stock\": 5,\n        \"price\": \"86.64\"\n    },\n    {\n        \"id\": \"9d5ebf15-aae4-40a9-8a96-36538b3418cc\",\n        \"name\": \"Reyes Hahn\",\n        \"code\": \"B0000DGV0O\",\n        \"reference\": \"6032150227710\",\n        \"stock\": 6,\n        \"price\": \"73.71\"\n    },\n    {\n        \"id\": \"1ef47237-e8e5-462c-8474-6623d426c514\",\n        \"name\": \"Modesta Pagac\",\n        \"code\": \"B0000DHCHM\",\n        \"reference\": \"7461775046984\",\n        \"stock\": 7,\n        \"price\": \"36.23\"\n    },\n    {\n        \"id\": \"826b28c0-7b7e-481b-8ee4-001a91952eea\",\n        \"name\": \"Janick Metz\",\n        \"code\": \"B000A6LQZ2\",\n        \"reference\": \"0506108174693\",\n        \"stock\": 4,\n        \"price\": \"17.58\"\n    },\n    {\n        \"id\": \"6d7c137e-025f-4dc4-b949-24136e452945\",\n        \"name\": \"Adrien Gusikowski\",\n        \"code\": \"B000FQ9CTY\",\n        \"reference\": \"6021069801661\",\n        \"stock\": 3,\n        \"price\": \"30.99\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get NailsPolish Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/nailPolish/87a2074d-2099-4f23-90bf-f49946166656",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"nailPolish",
+								"87a2074d-2099-4f23-90bf-f49946166656"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get NailsPolish Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/nailPolish/87a2074d-2099-4f23-90bf-f49946166656",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"nailPolish",
+										"87a2074d-2099-4f23-90bf-f49946166656"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:03:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"87a2074d-2099-4f23-90bf-f49946166656\",\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Post NailsPolish",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/nailPolish",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"nailPolish"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Post NailsPolish",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/nailPolish",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"nailPolish"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:06:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"2d7b6d2f-9e19-4dfb-894d-979956d2edd4\",\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Put NailsPolish",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/nailPolish/2d7b6d2f-9e19-4dfb-894d-979956d2edd4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"nailPolish",
+								"2d7b6d2f-9e19-4dfb-894d-979956d2edd4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Put NailsPolish",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/nailPolish/2d7b6d2f-9e19-4dfb-894d-979956d2edd4",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"nailPolish",
+										"2d7b6d2f-9e19-4dfb-894d-979956d2edd4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:09:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"c188e714-f12b-4d9a-ab45-0f7775d804fe\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete NailsPolish",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\"   : \"72ca1a0d-7284-4c56-8618-a9de776406aa\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/nailPolish/72ca1a0d-7284-4c56-8618-a9de776406aa",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"nailPolish",
+								"72ca1a0d-7284-4c56-8618-a9de776406aa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete NailsPolish",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\"   : \"72ca1a0d-7284-4c56-8618-a9de776406aa\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/nailPolish/72ca1a0d-7284-4c56-8618-a9de776406aa",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"nailPolish",
+										"72ca1a0d-7284-4c56-8618-a9de776406aa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 25 Oct 2024 23:39:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Blush",
+			"item": [
+				{
+					"name": "Get Blush",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/blush",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blush"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Blush",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/blush",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"blush"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 00:57:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"87a2074d-2099-4f23-90bf-f49946166656\",\n        \"name\": \"Mr. Cristian Bode\",\n        \"code\": \"B00066USKU\",\n        \"reference\": \"2192345497572\",\n        \"stock\": 2,\n        \"price\": \"32.75\"\n    },\n    {\n        \"id\": \"43ca27ee-5923-4d89-b534-090fc1154eaf\",\n        \"name\": \"Graciela Hartmann PhD\",\n        \"code\": \"B000J1FZV4\",\n        \"reference\": \"6182206509892\",\n        \"stock\": 7,\n        \"price\": \"12.43\"\n    },\n    {\n        \"id\": \"614ce748-6e31-4ce2-a97b-151031cd6f92\",\n        \"name\": \"Alicia Cummings\",\n        \"code\": \"B000A1AUBI\",\n        \"reference\": \"2406029834646\",\n        \"stock\": 3,\n        \"price\": \"4.40\"\n    },\n    {\n        \"id\": \"c8e87dbb-1829-4983-859d-251605e30078\",\n        \"name\": \"Gabriella Eichmann\",\n        \"code\": \"B000B5MVJM\",\n        \"reference\": \"2564128863964\",\n        \"stock\": 1,\n        \"price\": \"36.63\"\n    },\n    {\n        \"id\": \"822e9011-1a1c-4da3-8c75-f4a71992ed46\",\n        \"name\": \"Emie Weber\",\n        \"code\": \"B0000DE0T8\",\n        \"reference\": \"0632634737948\",\n        \"stock\": 7,\n        \"price\": \"60.38\"\n    },\n    {\n        \"id\": \"d7e7f289-febc-4d1b-852a-746acdcef0f2\",\n        \"name\": \"Will Runolfsdottir\",\n        \"code\": \"B0002W2RBG\",\n        \"reference\": \"0373600431438\",\n        \"stock\": 5,\n        \"price\": \"86.64\"\n    },\n    {\n        \"id\": \"9d5ebf15-aae4-40a9-8a96-36538b3418cc\",\n        \"name\": \"Reyes Hahn\",\n        \"code\": \"B0000DGV0O\",\n        \"reference\": \"6032150227710\",\n        \"stock\": 6,\n        \"price\": \"73.71\"\n    },\n    {\n        \"id\": \"1ef47237-e8e5-462c-8474-6623d426c514\",\n        \"name\": \"Modesta Pagac\",\n        \"code\": \"B0000DHCHM\",\n        \"reference\": \"7461775046984\",\n        \"stock\": 7,\n        \"price\": \"36.23\"\n    },\n    {\n        \"id\": \"826b28c0-7b7e-481b-8ee4-001a91952eea\",\n        \"name\": \"Janick Metz\",\n        \"code\": \"B000A6LQZ2\",\n        \"reference\": \"0506108174693\",\n        \"stock\": 4,\n        \"price\": \"17.58\"\n    },\n    {\n        \"id\": \"6d7c137e-025f-4dc4-b949-24136e452945\",\n        \"name\": \"Adrien Gusikowski\",\n        \"code\": \"B000FQ9CTY\",\n        \"reference\": \"6021069801661\",\n        \"stock\": 3,\n        \"price\": \"30.99\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Blush Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/blush/87a2074d-2099-4f23-90bf-f49946166656",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blush",
+								"87a2074d-2099-4f23-90bf-f49946166656"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Blush Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/blush/87a2074d-2099-4f23-90bf-f49946166656",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"blush",
+										"87a2074d-2099-4f23-90bf-f49946166656"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:03:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"87a2074d-2099-4f23-90bf-f49946166656\",\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Post Blush",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/blush",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blush"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Post Blush",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/blush",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"blush"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:06:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"2d7b6d2f-9e19-4dfb-894d-979956d2edd4\",\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Put Blush",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Put Blush",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/blush/2d7b6d2f-9e19-4dfb-894d-979956d2edd4",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"blush",
+										"2d7b6d2f-9e19-4dfb-894d-979956d2edd4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:09:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"c188e714-f12b-4d9a-ab45-0f7775d804fe\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Blush",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Delete Blush",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\"   : \"72ca1a0d-7284-4c56-8618-a9de776406aa\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/blush/72ca1a0d-7284-4c56-8618-a9de776406aa",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"blush",
+										"72ca1a0d-7284-4c56-8618-a9de776406aa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 25 Oct 2024 23:39:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				},
+				{
+					"name": "127.0.0.1:8080/api/v1/blush",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/blush",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blush"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LipsTick",
+			"item": [
+				{
+					"name": "Get LipsTick",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/lipsTick",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"lipsTick"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get LipsTick",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/lipsTick",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"lipsTick"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 00:57:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"87a2074d-2099-4f23-90bf-f49946166656\",\n        \"name\": \"Mr. Cristian Bode\",\n        \"code\": \"B00066USKU\",\n        \"reference\": \"2192345497572\",\n        \"stock\": 2,\n        \"price\": \"32.75\"\n    },\n    {\n        \"id\": \"43ca27ee-5923-4d89-b534-090fc1154eaf\",\n        \"name\": \"Graciela Hartmann PhD\",\n        \"code\": \"B000J1FZV4\",\n        \"reference\": \"6182206509892\",\n        \"stock\": 7,\n        \"price\": \"12.43\"\n    },\n    {\n        \"id\": \"614ce748-6e31-4ce2-a97b-151031cd6f92\",\n        \"name\": \"Alicia Cummings\",\n        \"code\": \"B000A1AUBI\",\n        \"reference\": \"2406029834646\",\n        \"stock\": 3,\n        \"price\": \"4.40\"\n    },\n    {\n        \"id\": \"c8e87dbb-1829-4983-859d-251605e30078\",\n        \"name\": \"Gabriella Eichmann\",\n        \"code\": \"B000B5MVJM\",\n        \"reference\": \"2564128863964\",\n        \"stock\": 1,\n        \"price\": \"36.63\"\n    },\n    {\n        \"id\": \"822e9011-1a1c-4da3-8c75-f4a71992ed46\",\n        \"name\": \"Emie Weber\",\n        \"code\": \"B0000DE0T8\",\n        \"reference\": \"0632634737948\",\n        \"stock\": 7,\n        \"price\": \"60.38\"\n    },\n    {\n        \"id\": \"d7e7f289-febc-4d1b-852a-746acdcef0f2\",\n        \"name\": \"Will Runolfsdottir\",\n        \"code\": \"B0002W2RBG\",\n        \"reference\": \"0373600431438\",\n        \"stock\": 5,\n        \"price\": \"86.64\"\n    },\n    {\n        \"id\": \"9d5ebf15-aae4-40a9-8a96-36538b3418cc\",\n        \"name\": \"Reyes Hahn\",\n        \"code\": \"B0000DGV0O\",\n        \"reference\": \"6032150227710\",\n        \"stock\": 6,\n        \"price\": \"73.71\"\n    },\n    {\n        \"id\": \"1ef47237-e8e5-462c-8474-6623d426c514\",\n        \"name\": \"Modesta Pagac\",\n        \"code\": \"B0000DHCHM\",\n        \"reference\": \"7461775046984\",\n        \"stock\": 7,\n        \"price\": \"36.23\"\n    },\n    {\n        \"id\": \"826b28c0-7b7e-481b-8ee4-001a91952eea\",\n        \"name\": \"Janick Metz\",\n        \"code\": \"B000A6LQZ2\",\n        \"reference\": \"0506108174693\",\n        \"stock\": 4,\n        \"price\": \"17.58\"\n    },\n    {\n        \"id\": \"6d7c137e-025f-4dc4-b949-24136e452945\",\n        \"name\": \"Adrien Gusikowski\",\n        \"code\": \"B000FQ9CTY\",\n        \"reference\": \"6021069801661\",\n        \"stock\": 3,\n        \"price\": \"30.99\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get LipsTick Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/lipsTick/87a2074d-2099-4f23-90bf-f49946166656",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"lipsTick",
+								"87a2074d-2099-4f23-90bf-f49946166656"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get LipsTick Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/lipsTick/87a2074d-2099-4f23-90bf-f49946166656",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"lipsTick",
+										"87a2074d-2099-4f23-90bf-f49946166656"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:03:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"87a2074d-2099-4f23-90bf-f49946166656\",\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Post LipsTick",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/lipsTick",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"lipsTick"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Post LipsTick",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/lipsTick",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"lipsTick"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:06:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"2d7b6d2f-9e19-4dfb-894d-979956d2edd4\",\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Put LipsTick",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Put LipsTick",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/lipsTick/2d7b6d2f-9e19-4dfb-894d-979956d2edd4",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"lipsTick",
+										"2d7b6d2f-9e19-4dfb-894d-979956d2edd4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:09:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"c188e714-f12b-4d9a-ab45-0f7775d804fe\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete LipsTick",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Delete LipsTick",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\"   : \"72ca1a0d-7284-4c56-8618-a9de776406aa\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/lipsTick/72ca1a0d-7284-4c56-8618-a9de776406aa",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"lipsTick",
+										"72ca1a0d-7284-4c56-8618-a9de776406aa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 25 Oct 2024 23:39:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "EyesShadows",
+			"item": [
+				{
+					"name": "Get EyesShadows",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/eyesShadows",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"eyesShadows"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get EyesShadows",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/eyesShadows",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eyesShadows"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 00:57:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"87a2074d-2099-4f23-90bf-f49946166656\",\n        \"name\": \"Mr. Cristian Bode\",\n        \"code\": \"B00066USKU\",\n        \"reference\": \"2192345497572\",\n        \"stock\": 2,\n        \"price\": \"32.75\"\n    },\n    {\n        \"id\": \"43ca27ee-5923-4d89-b534-090fc1154eaf\",\n        \"name\": \"Graciela Hartmann PhD\",\n        \"code\": \"B000J1FZV4\",\n        \"reference\": \"6182206509892\",\n        \"stock\": 7,\n        \"price\": \"12.43\"\n    },\n    {\n        \"id\": \"614ce748-6e31-4ce2-a97b-151031cd6f92\",\n        \"name\": \"Alicia Cummings\",\n        \"code\": \"B000A1AUBI\",\n        \"reference\": \"2406029834646\",\n        \"stock\": 3,\n        \"price\": \"4.40\"\n    },\n    {\n        \"id\": \"c8e87dbb-1829-4983-859d-251605e30078\",\n        \"name\": \"Gabriella Eichmann\",\n        \"code\": \"B000B5MVJM\",\n        \"reference\": \"2564128863964\",\n        \"stock\": 1,\n        \"price\": \"36.63\"\n    },\n    {\n        \"id\": \"822e9011-1a1c-4da3-8c75-f4a71992ed46\",\n        \"name\": \"Emie Weber\",\n        \"code\": \"B0000DE0T8\",\n        \"reference\": \"0632634737948\",\n        \"stock\": 7,\n        \"price\": \"60.38\"\n    },\n    {\n        \"id\": \"d7e7f289-febc-4d1b-852a-746acdcef0f2\",\n        \"name\": \"Will Runolfsdottir\",\n        \"code\": \"B0002W2RBG\",\n        \"reference\": \"0373600431438\",\n        \"stock\": 5,\n        \"price\": \"86.64\"\n    },\n    {\n        \"id\": \"9d5ebf15-aae4-40a9-8a96-36538b3418cc\",\n        \"name\": \"Reyes Hahn\",\n        \"code\": \"B0000DGV0O\",\n        \"reference\": \"6032150227710\",\n        \"stock\": 6,\n        \"price\": \"73.71\"\n    },\n    {\n        \"id\": \"1ef47237-e8e5-462c-8474-6623d426c514\",\n        \"name\": \"Modesta Pagac\",\n        \"code\": \"B0000DHCHM\",\n        \"reference\": \"7461775046984\",\n        \"stock\": 7,\n        \"price\": \"36.23\"\n    },\n    {\n        \"id\": \"826b28c0-7b7e-481b-8ee4-001a91952eea\",\n        \"name\": \"Janick Metz\",\n        \"code\": \"B000A6LQZ2\",\n        \"reference\": \"0506108174693\",\n        \"stock\": 4,\n        \"price\": \"17.58\"\n    },\n    {\n        \"id\": \"6d7c137e-025f-4dc4-b949-24136e452945\",\n        \"name\": \"Adrien Gusikowski\",\n        \"code\": \"B000FQ9CTY\",\n        \"reference\": \"6021069801661\",\n        \"stock\": 3,\n        \"price\": \"30.99\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get EyesShadows Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/eyesShadows/87a2074d-2099-4f23-90bf-f49946166656",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"eyesShadows",
+								"87a2074d-2099-4f23-90bf-f49946166656"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get EyesShadows Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/eyesShadows/87a2074d-2099-4f23-90bf-f49946166656",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eyesShadows",
+										"87a2074d-2099-4f23-90bf-f49946166656"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:03:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"87a2074d-2099-4f23-90bf-f49946166656\",\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Post EyesShadows",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/v1/eyesShadows",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"eyesShadows"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Post EyesShadows",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/eyesShadows",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eyesShadows"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:06:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"2d7b6d2f-9e19-4dfb-894d-979956d2edd4\",\n    \"name\": \"Mr. Cristian Bode\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 2,\n    \"price\": \"32.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Put EyesShadows",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Put EyesShadows",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/eyesShadows/2d7b6d2f-9e19-4dfb-894d-979956d2edd4",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eyesShadows",
+										"2d7b6d2f-9e19-4dfb-894d-979956d2edd4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Oct 2024 01:09:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"c188e714-f12b-4d9a-ab45-0f7775d804fe\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete EyesShadows",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Delete EyesShadows",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\"   : \"72ca1a0d-7284-4c56-8618-a9de776406aa\",\n    \"name\": \"Mr. Michael Alfonso\",\n    \"code\": \"B00066USKU\",\n    \"reference\": \"2192345497572\",\n    \"stock\": 50,\n    \"price\": \"14.75\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/v1/eyesShadows/72ca1a0d-7284-4c56-8618-a9de776406aa",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"eyesShadows",
+										"72ca1a0d-7284-4c56-8618-a9de776406aa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 25 Oct 2024 23:39:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				}
+			]
+		}
+	]
+}
