@@ -1,48 +1,32 @@
 package org.lauren.services;
 
-import com.github.javafaker.Faker;
 import org.lauren.entities.BlushEntities;
+import org.lauren.repositories.BlushRepo;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 @Service
 public class BlushService {
-    private List<BlushEntities> blush = new ArrayList<>();
+    private BlushRepo blushRepo;
     public BlushService(){
-        Faker faker = new Faker();
-        for(int i = 0; i < 10; i++){
-            this.blush.add(new BlushEntities(
-                    UUID.randomUUID().toString(),
-                    faker.name().name(),
-                    faker.code().asin(),
-                    faker.code().ean13(),
-                    faker.number().randomDigit(),
-                    faker.commerce().price()
-            ));
-        }
     }
-    public List<BlushEntities> getblush(){
-        return blush;
+    public List<BlushEntities> getblush(){return blushRepo.findAll();}
+
+    public Optional<BlushEntities> getblush(String id) {
+        return blushRepo.findById(UUID.fromString(id));
     }
 
-    public Optional<BlushEntities> getblush(String id){
-        return blush.stream()
-                .filter(item -> item.getId().equals(id))
-                .findFirst();
+    public BlushEntities setblush(BlushEntities Blush){
+        Blush.setId(UUID.randomUUID().toString());
+        blushRepo.save(Blush);
+        return Blush;
     }
-
-    public BlushEntities setblush(BlushEntities lip){
-        lip.setId(UUID.randomUUID().toString());
-        this.blush.add(lip);
-        return lip;
-    }
-    public BlushEntities updateblush(String id, BlushEntities lip){
+    public BlushEntities updateblush(String id, BlushEntities Blush){
         this.deleteblush(id);
-        lip.setId(id);
-        return this.setblush(lip);
+        blushRepo.save(id);
+        return this.setblush(Blush);
     }
 
     public Boolean deleteblush(String id){
