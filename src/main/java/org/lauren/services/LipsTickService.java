@@ -2,6 +2,7 @@ package org.lauren.services;
 
 import com.github.javafaker.Faker;
 import org.lauren.entities.LipsTickEntities;
+import org.lauren.repositories.LipsTickRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,42 +11,37 @@ import java.util.Optional;
 import java.util.UUID;
 @Service
 public class LipsTickService {
-    private List<LipsTickEntities> lipsTick = new ArrayList<>();
-    public LipsTickService(){
-        Faker faker = new Faker();
-        for(int i = 0; i < 10; i++){
-            this.lipsTick.add(new LipsTickEntities(
-                    UUID.randomUUID().toString(),
-                    faker.name().name(),
-                    faker.code().asin(),
-                    faker.code().ean13(),
-                    faker.number().randomDigit(),
-                    faker.commerce().price()
-            ));
-        }
-    }
+
+    private LipsTickRepo lipsTickRepo;
+    public LipsTickService(){}
+
     public List<LipsTickEntities> getlipsTick(){
-        return lipsTick;
+        return lipsTickRepo.findAll();
     }
 
     public Optional<LipsTickEntities> getlipsTick(String id){
-        return lipsTick.stream()
-                .filter(item -> item.getId().equals(id))
-                .findFirst();
+        return lipsTickRepo.findById(UUID.fromString(id));
     }
 
     public LipsTickEntities setlipsTick(LipsTickEntities lip){
         lip.setId(UUID.randomUUID().toString());
-        this.lipsTick.add(lip);
+        lipsTickRepo.save(lip);
         return lip;
     }
     public LipsTickEntities updatelipsTick(String id, LipsTickEntities lip){
         this.deletelipsTick(id);
         lip.setId(id);
+        lipsTickRepo.save(lip);
         return this.setlipsTick(lip);
     }
 
     public Boolean deletelipsTick(String id){
-        return lipsTick.removeIf(item -> item.getId().equals(id));
+        try {
+            lipsTickRepo.deleteById(UUID.fromString(id));
+            return true;
+        } catch(Exception e){
+            return false;
+        }
+
     }
 }

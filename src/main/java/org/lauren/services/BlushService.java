@@ -25,11 +25,17 @@ public class BlushService {
     }
     public BlushEntities updateblush(String id, BlushEntities Blush){
         this.deleteblush(id);
-        blushRepo.save(id);
+        Blush.setId(id);
+        blushRepo.save(Blush);
         return this.setblush(Blush);
     }
 
     public Boolean deleteblush(String id){
-        return blush.removeIf(item -> item.getId().equals(id));
+        try{
+            blushRepo.deleteById(UUID.fromString(id));
+            return true;
+        } catch(Exception e){
+            return false;
+        }
     }
 }
