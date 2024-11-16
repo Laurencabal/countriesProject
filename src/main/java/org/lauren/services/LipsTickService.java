@@ -1,11 +1,9 @@
 package org.lauren.services;
 
-import com.github.javafaker.Faker;
 import org.lauren.entities.LipsTickEntities;
 import org.lauren.repositories.LipsTickRepo;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;

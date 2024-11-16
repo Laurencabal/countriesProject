@@ -1,52 +1,43 @@
 package org.lauren.services;
 
-import com.github.javafaker.Faker;
 import org.lauren.entities.NailPolishEntities;
+import org.lauren.repositories.NailPolishRepo;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
 @Service
 public class NailPolishService  {
-    private List<NailPolishEntities> nailPolish = new ArrayList<>();
-    public NailPolishService(){
-        Faker faker = new Faker();
-        for(int i = 0; i < 10; i++){
-            this.nailPolish.add(new NailPolishEntities(
-                    UUID.randomUUID().toString(),
-                    faker.name().name(),
-                    faker.code().asin(),
-                    faker.code().ean13(),
-                    faker.number().randomDigit(),
-                    faker.commerce().price()
-            ));
-        }
-    }
+    private NailPolishRepo nailPolishRepo;
+    public NailPolishService(){}
     public List<NailPolishEntities> getnailPolish(){
-        return nailPolish;
+        return nailPolishRepo.findAll();
     }
 
     public Optional<NailPolishEntities> getnailPolish(String id){
-        return nailPolish.stream()
-                .filter(item -> item.getId().equals(id))
-                .findFirst();
+        return nailPolishRepo.findById(UUID.fromString(id));
     }
 
     public NailPolishEntities setnailPolish(NailPolishEntities nailPolish){
         nailPolish.setId(UUID.randomUUID().toString());
-        this.nailPolish.add(nailPolish);
+        nailPolishRepo.save(nailPolish);
         return nailPolish;
     }
     public NailPolishEntities updatenailPolish(String id, NailPolishEntities nailPolish){
         this.deletenailPolish(id);
         nailPolish.setId(id);
+        nailPolishRepo.save(nailPolish);
         return this.setnailPolish(nailPolish);
     }
 
     public Boolean deletenailPolish(String id){
-        return nailPolish.removeIf(item -> item.getId().equals(id));
+        try {
+            nailPolishRepo.deleteById(UUID.fromString(id));
+            return true;
+        } catch(Exception e) {
+            return false;
+        }
     }
 }
